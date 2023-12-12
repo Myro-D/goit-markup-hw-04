@@ -67,6 +67,10 @@ body {
 .container.header {
   display: flex;
 }
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 header .container {
   display: flex;
   margin: 0 auto;
@@ -124,6 +128,7 @@ header .container {
 .nav-item:hover,
 .nav-item:focus {
   color: #404bbf;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Top line bg */
 
@@ -136,6 +141,7 @@ header .container {
 }
 .adress-link:hover,
 .adress-link:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #404bbf;
 }
 .nav-list:last-child {
@@ -157,11 +163,17 @@ header {
   transform: scaleX(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.active {
+  position: relative;
+  color: #404bbf;
+}
 /* SECTION ONE */
 main {
   display: block;
 }
 .section-one {
+  max-width: 1440px;
+  margin: 0 auto;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -201,9 +213,11 @@ main {
   border-radius: 4px;
   height: 56px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-section-one:hover,
 .button-section-one:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
 }
 
@@ -339,6 +353,7 @@ main {
   align-items: center;
 }
 .item-portfolio:hover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -369,9 +384,11 @@ main {
   font-family: sans-serif;
 }
 .item-portfolio:hover .overlay {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
 }
 .container-portfolio-item:hover .overlay {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
 }
 /* FOOTER */
