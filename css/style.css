@@ -137,12 +137,12 @@ header .container {
   color: #404bbf;
   padding: 24px 0;
   position: relative;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item:hover,
 .nav-item:focus {
   color: #404bbf;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Top line bg */
 
@@ -152,11 +152,11 @@ header .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-link:hover,
 .adress-link:focus {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #404bbf;
 }
 .adress-item {
@@ -426,12 +426,9 @@ main {
 .item-portfolio {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 0px 0px 4px 4px;
-  /* flex-basis: calc((100% - 48px) / 3); */
-  flex-direction: column;
-  justify-content: center;
+
   display: block;
   background-color: #f4f4fd;
-  align-items: center;
 }
 .item-portfolio:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -471,6 +468,7 @@ main {
 }
 
 /* FOOTER */
+
 .foter {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -506,10 +504,10 @@ footer a {
   display: inline-block;
   margin-bottom: 16px;
 }
-.container-footer {
+/* .container-footer {
   display: flex;
   align-items: baseline;
-}
+} */
 .social-footer {
   display: flex;
   gap: 16px;
