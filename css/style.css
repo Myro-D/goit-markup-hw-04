@@ -418,6 +418,7 @@ main {
   row-gap: 48px;
 }
 .item-portfolio {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 0px 0px 4px 4px;
   /* flex-basis: calc((100% - 48px) / 3); */
   flex-direction: column;
