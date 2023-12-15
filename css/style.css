@@ -504,10 +504,10 @@ footer a {
   display: inline-block;
   margin-bottom: 16px;
 }
-/* .container-footer {
+.container-footer {
   display: flex;
   align-items: baseline;
-} */
+}
 .social-footer {
   display: flex;
   gap: 16px;
