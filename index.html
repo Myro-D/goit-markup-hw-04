@@ -566,8 +566,8 @@
               <li class="footer-social-item">
                 <a class="a-footer-social" href="">
                   <svg
-                    width="24"
-                    height="24"
+                    width="16"
+                    height="16"
                     class="svg-footer-social"
                     fill="--svg-icon"
                   >
@@ -577,8 +577,110 @@
               </li>
             </ul>
           </div>
+          <div>
+            <form class="form-foter-sub">
+              <p class="p-social-footer">Subscribe</p>
+              <input
+                class="input-sub"
+                type="email"
+                placeholder="E-mail"
+                name="email"
+              /><button type="submit" class="button-sub">
+                Subscribe
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                >
+                  <path
+                    d="M24 0L0 11.25L7.66994 13.6172L19.5 4.375L10.5017 14.4913L10.509 14.4936L10.5 14.4913V20L14.8013 15.8183L20.2501 17.5L24 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </footer>
+    </div>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-btn" type="button" aria-label="Modal close button">
+          <svg
+            class="svg-btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_656785_79)">
+              <path
+                d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                fill="#2E2F42"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_656785_79">
+                <rect width="8" height="8" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form" name="contact-form">
+          <label class="label-modal" for="#user_name">Name</label>
+          <div class="field">
+            <input
+              id="user_name"
+              name="user_name"
+              class="input-modal"
+              type="text"
+            />
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="label-modal" for="#user_tel">Phone</label>
+          <div class="field">
+            <input
+              id="user_tel"
+              name="user_tel"
+              class="input-modal"
+              type="tel"
+            />
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#user_tel"></use>
+            </svg>
+          </div>
+          <label class="label-modal" for="#user_email">Email</label>
+          <div class="field">
+            <input
+              id="user_email"
+              name="user_email"
+              class="input-modal"
+              type="email"
+            />
+            <svg class="form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#user_email"></use>
+            </svg>
+          </div>
+          <label class="label-modal" for="#user_comment">Comment</label>
+          <div class="field">
+            <input
+              id="user_comment"
+              name="user_comment"
+              class="input-modal"
+              type="text"
+            />
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
