@@ -608,32 +608,22 @@
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
-          <svg
-            class="svg-btn-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="8"
-            height="8"
-            viewBox="0 0 8 8"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_656785_79)">
-              <path
-                d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
-                fill="#2E2F42"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_656785_79">
-                <rect width="8" height="8" fill="white" />
-              </clipPath>
-            </defs>
+          <svg class="svg-btn-icon" width="8" height="8">
+            <!-- <use
+              class="close-trans"
+              href="./images/icons.svg#close-trans"
+            ></use> -->
+            <use
+              class="close-active"
+              href="./images/icons.svg#close-active"
+            ></use>
           </svg>
         </button>
         <p class="modal-caption">
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form" name="contact-form">
-          <label class="label-modal" for="#user_name">Name</label>
+          <label class="label-modal" for="user_name">Name</label>
           <div class="field">
             <input
               id="user_name"
@@ -645,7 +635,7 @@
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
-          <label class="label-modal" for="#user_tel">Phone</label>
+          <label class="label-modal" for="user_tel">Phone</label>
           <div class="field">
             <input
               id="user_tel"
@@ -653,11 +643,11 @@
               class="input-modal"
               type="tel"
             />
-            <svg class="form-icon" width="13px" height="13px">
+            <svg class="form-icon" width="18px" height="24px">
               <use href="./images/icons.svg#user_tel"></use>
             </svg>
           </div>
-          <label class="label-modal" for="#user_email">Email</label>
+          <label class="label-modal" for="user_email">Email</label>
           <div class="field">
             <input
               id="user_email"
@@ -665,11 +655,11 @@
               class="input-modal"
               type="email"
             />
-            <svg class="form-icon" width="15px" height="12px">
+            <svg class="form-icon" width="18px" height="24px">
               <use href="./images/icons.svg#user_email"></use>
             </svg>
           </div>
-          <label class="label-modal" for="#user_comment">Comment</label>
+          <label class="label-modal" for="user_comment">Comment</label>
           <div class="field field-two">
             <textarea
               id="user_comment"
@@ -679,15 +669,26 @@
             >
             </textarea>
           </div>
-          <div class="checkbox-cont">
-            <input class="checkbox" type="checkbox" />
-            <p class="p-checkbox">
-              I accept the terms and conditions of the
-              <a href="" class="privacy-policy">Privacy Policy</a>
-            </p>
+          <label class="checkbox-cont">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user_agree"
+              value="false"
+              checked
+            />
+            <span class="span-checkbox"
+              ><svg class="svg-checkbox" width="16px" height="16px">
+                <use href="./images/icons.svg#checkbox"></use></svg
+            ></span>
+            I accept the terms and conditions of the
+            <a href="" class="privacy-policy">Privacy Policy</a>
+          </label>
+          <div class="container-submit">
+            <button type="submit" class="submit-btn">
+              <p class="text-submit-btn">Send</p>
+            </button>
           </div>
-
-          <button type="submit">Send</button>
         </form>
       </div>
     </div>

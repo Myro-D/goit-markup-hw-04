@@ -570,14 +570,20 @@ input::placeholder {
   padding: 16px 8px 8px;
 }
 .button-sub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 165px;
   height: 40px;
-  padding: 8px, 24px, 8px, 24px;
+  padding: 8px, 24px;
   border-radius: 4px;
   gap: 16px;
   color: #ffffff;
   background-color: #4d5ae5;
   margin-left: 24px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  outline: none;
 }
 .backdrop {
   position: fixed;
@@ -624,9 +630,12 @@ input::placeholder {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .modal-btn:active {
-  fill: #404bbf;
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
+
 .modal-caption {
   color: #2e2f42;
   text-align: center;
@@ -678,14 +687,19 @@ input::placeholder {
 .area-modal {
   width: 100%;
   min-height: 120px;
+  padding-left: 0;
 }
 .checkbox-cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 8px;
+  display: block;
   margin-bottom: 24px;
+  color: #8e8f99;
+  user-select: none;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
 }
 .p-checkbox {
   color: #8e8f99;
@@ -711,4 +725,47 @@ input::placeholder {
 }
 .checkbox:active {
   fill: #404bbf;
+}
+.span-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #2e2f4266;
+  cursor: pointer;
+}
+.svg-checkbox {
+  opacity: 0;
+}
+
+.checkbox:checked + .span-checkbox > .svg-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  opacity: 1;
+}
+.container-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn {
+  min-width: 169px;
+  min-height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.text-submit-btn {
+  color: #fff;
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
 }
